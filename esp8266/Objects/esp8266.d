@@ -1,0 +1,15 @@
+.\objects\esp8266.o: esp8266.c
+.\objects\esp8266.o: esp8266.h
+.\objects\esp8266.o: F:\keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\esp8266.o: .\FWlib\inc\stm32f10x_usart.h
+.\objects\esp8266.o: .\CMSIS\stm32f10x.h
+.\objects\esp8266.o: .\CMSIS\core_cm3.h
+.\objects\esp8266.o: F:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\esp8266.o: .\CMSIS\system_stm32f10x.h
+.\objects\esp8266.o: .\user\stm32f10x_conf.h
+.\objects\esp8266.o: .\FWlib\inc\stm32f10x_exti.h
+.\objects\esp8266.o: .\CMSIS\stm32f10x.h
+.\objects\esp8266.o: .\FWlib\inc\stm32f10x_gpio.h
+.\objects\esp8266.o: .\FWlib\inc\stm32f10x_rcc.h
+.\objects\esp8266.o: .\FWlib\inc\stm32f10x_usart.h
+.\objects\esp8266.o: .\FWlib\inc\misc.h

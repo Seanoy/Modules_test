@@ -1,0 +1,13 @@
+.\objects\send.o: send.c
+.\objects\send.o: .\CMSIS\stm32f10x.h
+.\objects\send.o: .\CMSIS\core_cm3.h
+.\objects\send.o: F:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\send.o: .\CMSIS\system_stm32f10x.h
+.\objects\send.o: .\user\stm32f10x_conf.h
+.\objects\send.o: .\FWlib\inc\stm32f10x_exti.h
+.\objects\send.o: .\CMSIS\stm32f10x.h
+.\objects\send.o: .\FWlib\inc\stm32f10x_gpio.h
+.\objects\send.o: .\FWlib\inc\stm32f10x_rcc.h
+.\objects\send.o: .\FWlib\inc\stm32f10x_usart.h
+.\objects\send.o: .\FWlib\inc\misc.h
+.\objects\send.o: F:\keil\ARM\ARMCC\Bin\..\include\stdio.h

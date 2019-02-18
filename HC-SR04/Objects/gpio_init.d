@@ -1,0 +1,13 @@
+.\objects\gpio_init.o: GPIO_Init.c
+.\objects\gpio_init.o: .\CMSIS\stm32f10x.h
+.\objects\gpio_init.o: .\CMSIS\core_cm3.h
+.\objects\gpio_init.o: F:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\gpio_init.o: .\CMSIS\system_stm32f10x.h
+.\objects\gpio_init.o: .\user\stm32f10x_conf.h
+.\objects\gpio_init.o: .\FWlib\inc\stm32f10x_exti.h
+.\objects\gpio_init.o: .\CMSIS\stm32f10x.h
+.\objects\gpio_init.o: .\FWlib\inc\stm32f10x_gpio.h
+.\objects\gpio_init.o: .\FWlib\inc\stm32f10x_rcc.h
+.\objects\gpio_init.o: .\FWlib\inc\stm32f10x_tim.h
+.\objects\gpio_init.o: .\FWlib\inc\stm32f10x_usart.h
+.\objects\gpio_init.o: .\FWlib\inc\misc.h

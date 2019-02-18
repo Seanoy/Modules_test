@@ -1,0 +1,12 @@
+.\objects\testled.o: testled.c
+.\objects\testled.o: .\CMSIS\stm32f10x.h
+.\objects\testled.o: .\CMSIS\core_cm3.h
+.\objects\testled.o: F:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\testled.o: .\CMSIS\system_stm32f10x.h
+.\objects\testled.o: .\user\stm32f10x_conf.h
+.\objects\testled.o: .\FWlib\inc\stm32f10x_exti.h
+.\objects\testled.o: .\CMSIS\stm32f10x.h
+.\objects\testled.o: .\FWlib\inc\stm32f10x_gpio.h
+.\objects\testled.o: .\FWlib\inc\stm32f10x_rcc.h
+.\objects\testled.o: .\FWlib\inc\stm32f10x_usart.h
+.\objects\testled.o: .\FWlib\inc\misc.h

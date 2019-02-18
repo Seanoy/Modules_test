@@ -1,0 +1,15 @@
+.\objects\rs04.o: RS04.c
+.\objects\rs04.o: .\CMSIS\stm32f10x.h
+.\objects\rs04.o: .\CMSIS\core_cm3.h
+.\objects\rs04.o: F:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\rs04.o: .\CMSIS\system_stm32f10x.h
+.\objects\rs04.o: .\user\stm32f10x_conf.h
+.\objects\rs04.o: .\FWlib\inc\stm32f10x_exti.h
+.\objects\rs04.o: .\CMSIS\stm32f10x.h
+.\objects\rs04.o: .\FWlib\inc\stm32f10x_gpio.h
+.\objects\rs04.o: .\FWlib\inc\stm32f10x_rcc.h
+.\objects\rs04.o: .\FWlib\inc\stm32f10x_tim.h
+.\objects\rs04.o: .\FWlib\inc\stm32f10x_usart.h
+.\objects\rs04.o: .\FWlib\inc\misc.h
+.\objects\rs04.o: F:\keil\ARM\ARMCC\Bin\..\include\math.h
+.\objects\rs04.o: F:\keil\ARM\ARMCC\Bin\..\include\stdio.h
