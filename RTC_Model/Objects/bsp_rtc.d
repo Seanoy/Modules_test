@@ -1,0 +1,16 @@
+.\objects\bsp_rtc.o: BSP\src\bsp_rtc.c
+.\objects\bsp_rtc.o: .\BSP\inc\bsp_rtc.h
+.\objects\bsp_rtc.o: .\CMSIS\stm32f10x.h
+.\objects\bsp_rtc.o: .\CMSIS\core_cm3.h
+.\objects\bsp_rtc.o: F:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\bsp_rtc.o: .\CMSIS\system_stm32f10x.h
+.\objects\bsp_rtc.o: .\user\stm32f10x_conf.h
+.\objects\bsp_rtc.o: .\FWlib\inc\stm32f10x_bkp.h
+.\objects\bsp_rtc.o: .\CMSIS\stm32f10x.h
+.\objects\bsp_rtc.o: .\FWlib\inc\stm32f10x_exti.h
+.\objects\bsp_rtc.o: .\FWlib\inc\stm32f10x_gpio.h
+.\objects\bsp_rtc.o: .\FWlib\inc\stm32f10x_pwr.h
+.\objects\bsp_rtc.o: .\FWlib\inc\stm32f10x_rcc.h
+.\objects\bsp_rtc.o: .\FWlib\inc\stm32f10x_rtc.h
+.\objects\bsp_rtc.o: .\FWlib\inc\stm32f10x_usart.h
+.\objects\bsp_rtc.o: .\FWlib\inc\misc.h

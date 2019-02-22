@@ -1,6 +1,6 @@
-.\objects\bsp_systick.o: bsp_systick.c
-.\objects\bsp_systick.o: bsp_systick.h
-.\objects\bsp_systick.o: bsp_sys.h
+.\objects\bsp_systick.o: BSP\src\bsp_systick.c
+.\objects\bsp_systick.o: .\BSP\inc\bsp_systick.h
+.\objects\bsp_systick.o: .\BSP\inc\bsp_sys.h
 .\objects\bsp_systick.o: .\CMSIS\stm32f10x.h
 .\objects\bsp_systick.o: .\CMSIS\core_cm3.h
 .\objects\bsp_systick.o: F:\keil\ARM\ARMCC\Bin\..\include\stdint.h

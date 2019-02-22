@@ -1,0 +1,14 @@
+.\objects\bsp_ld3320.o: BSP\src\bsp_LD3320.c
+.\objects\bsp_ld3320.o: .\BSP\inc\bsp_LD3320.h
+.\objects\bsp_ld3320.o: .\CMSIS\stm32f10x.h
+.\objects\bsp_ld3320.o: .\CMSIS\core_cm3.h
+.\objects\bsp_ld3320.o: F:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\bsp_ld3320.o: .\CMSIS\system_stm32f10x.h
+.\objects\bsp_ld3320.o: .\user\stm32f10x_conf.h
+.\objects\bsp_ld3320.o: .\FWlib\inc\stm32f10x_exti.h
+.\objects\bsp_ld3320.o: .\CMSIS\stm32f10x.h
+.\objects\bsp_ld3320.o: .\FWlib\inc\stm32f10x_gpio.h
+.\objects\bsp_ld3320.o: .\FWlib\inc\stm32f10x_rcc.h
+.\objects\bsp_ld3320.o: .\FWlib\inc\stm32f10x_spi.h
+.\objects\bsp_ld3320.o: .\FWlib\inc\stm32f10x_usart.h
+.\objects\bsp_ld3320.o: .\FWlib\inc\misc.h

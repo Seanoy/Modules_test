@@ -1,5 +1,5 @@
-.\objects\bsp_sys.o: bsp_sys.c
-.\objects\bsp_sys.o: bsp_sys.h
+.\objects\bsp_sys.o: BSP\src\bsp_sys.c
+.\objects\bsp_sys.o: .\BSP\inc\bsp_sys.h
 .\objects\bsp_sys.o: .\CMSIS\stm32f10x.h
 .\objects\bsp_sys.o: .\CMSIS\core_cm3.h
 .\objects\bsp_sys.o: F:\keil\ARM\ARMCC\Bin\..\include\stdint.h
