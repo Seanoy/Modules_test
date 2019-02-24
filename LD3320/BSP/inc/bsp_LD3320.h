@@ -55,11 +55,11 @@
 #define LD_PLL_ASR_1D 		0x1f
 
 // LD chip fixed values.
-#define RESUM_OF_MUSIC               0x01
-#define CAUSE_MP3_SONG_END           0x20
+#define RESUM_OF_MUSIC               	0x01
+#define CAUSE_MP3_SONG_END           	0x20
 
-#define MASK_INT_SYNC								0x10
-#define MASK_INT_FIFO								0x04
+#define MASK_INT_SYNC									0x10
+#define MASK_INT_FIFO									0x04
 #define MASK_AFIFO_INT								0x01
 #define MASK_FIFO_STATUS_AFULL				0x08
 
@@ -68,7 +68,7 @@
 #define CODE_SS	  	2	 /*闪烁*/
 #define CODE_AJCF		3	 /*按键触发*/
 #define CODE_QM	  	4	 /*全灭*/
-#define ludan  			5  /*呼叫卤蛋*/
+#define CODE_CALL  	5  /*呼叫模式*/
 #define Change_Wake 6 	/*转换成唤醒模式*/
 
 //模块状态模式

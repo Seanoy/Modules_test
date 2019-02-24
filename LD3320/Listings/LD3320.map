@@ -1121,7 +1121,7 @@ Image component sizes
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
         16          0          0          0          0        387   bsp.o
-      2200        108        130         24          0      12068   bsp_ld3320.o
+      2200        108        130         24          0      12064   bsp_ld3320.o
          0          0          0          0          0       4532   core_cm3.o
         14          0          0          0          0     207179   main.o
        132         22          0          0          0       1319   misc.o
@@ -1136,7 +1136,7 @@ Image component sizes
        182          8          0          0          0        923   usart.o
 
     ----------------------------------------------------------------------
-      4514        254        468         44       1028     281854   Object Totals
+      4514        254        468         44       1028     281850   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         18          0          2          0          4          0   (incl. Padding)
 
@@ -1177,8 +1177,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      4672        270        468         44       1028     278974   Grand Totals
-      4672        270        468         44       1028     278974   ELF Image Totals
+      4672        270        468         44       1028     278970   Grand Totals
+      4672        270        468         44       1028     278970   ELF Image Totals
       4672        270        468         44          0          0   ROM Totals
 
 ==============================================================================

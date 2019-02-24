@@ -273,17 +273,17 @@ uint8 LD_AsrAddFixed(void)
 	 																			"kai deng",\
 																				"guan deng",\
 																				"yi kou yan qi shui",\
-																				 "zhi zhang",\
-		                                                                         "lu dan",\
-		                                                                         "huan xing mo shi"\
+																				"zhi zhang",\
+		                                    "sha dan",\
+		                                    "huan xing mo shi"\
 																				};	/*添加关键词，用户修改*/
 	 uint8  pCode[DATE_A] = {
 	 															CODE_LSD,\
 																CODE_SS,\
-																 CODE_AJCF,\
-																  CODE_QM,\
-		                                                         ludan,\
-		                                                          Change_Wake\
+																CODE_AJCF,\
+																CODE_QM,\
+		                            CODE_CALL,\
+		                            Change_Wake\
 															};	/*添加识别码，用户修改*/
 	flag = 1;
 	for (k=0; k<DATE_A; k++)
@@ -488,18 +488,7 @@ uint8 RunASR(void)
 **********************************************************/ 
 void LD3320_GPIO_Cfg(void)
 {	
-	    GPIO_InitTypeDef GPIO_InitStructure;
-		// 配置PA8 输出	 8M 波形	
-//		{	
-//	    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA | RCC_APB2Periph_AFIO, ENABLE);
-//	
-//	    /*    MCO    configure */
-//	    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8;
-//	    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
-//	    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-//	    GPIO_Init(GPIOA,&GPIO_InitStructure);	
-//	    RCC_MCOConfig( RCC_MCO_HSE);		//8M
-//		}
+	  GPIO_InitTypeDef GPIO_InitStructure;
 	 //io口配置
 	 {
 	 	RCC_APB2PeriphClockCmd( RCC_APB2Periph_GPIOA | RCC_APB2Periph_GPIOB ,ENABLE);
@@ -695,7 +684,7 @@ void  LD3320_main(void)
                                              															
 												 switch(nAsrRes)		   /*对结果执行相关操作,客户修改*/
 												  {
-													 case ludan:      /**唤醒语音识别模块***/
+													 case CODE_CALL:      /**唤醒语音识别模块***/
 													   
 													      status=Call_out_mode ;   //呼叫卤蛋 进入输入指令模式
 													               for(i=0;i<3;i++)
