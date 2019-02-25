@@ -4,8 +4,7 @@
 #define   uchar unsigned char
 #define   uint unsigned int	
 #define SCL_H         GPIOB->BSRR = GPIO_Pin_6
-#define SCL_L         GPIOB->BRR  = GPIO_Pin_6 
-   char  test=0; 		
+#define SCL_L         GPIOB->BRR  = GPIO_Pin_6 	
 #define SDA_H         GPIOB->BSRR = GPIO_Pin_7
 #define SDA_L         GPIOB->BRR  = GPIO_Pin_7
 
@@ -219,7 +218,7 @@ unsigned char Single_Read(unsigned char SlaveAddress,unsigned char REG_Address)
 {   unsigned char REG_data;     	
 	if(!I2C_Start())return false;
     I2C_SendByte(SlaveAddress); //I2C_SendByte(((REG_Address & 0x0700) >>7) | REG_Address & 0xFFFE);//设置高起始地址+器件地址 
-    if(!I2C_WaitAck()){I2C_Stop();test=1; return false;}
+    if(!I2C_WaitAck()){I2C_Stop(); return false;}
     I2C_SendByte((u8) REG_Address);   //设置低起始地址      
     I2C_WaitAck();
     I2C_Start();

@@ -1,0 +1,14 @@
+.\stm3210e-eval_xl\i2croutines.o: ..\src\I2CRoutines.c
+.\stm3210e-eval_xl\i2croutines.o: ..\inc\I2CRoutines.h
+.\stm3210e-eval_xl\i2croutines.o: ..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\stm3210e-eval_xl\i2croutines.o: ..\..\..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+.\stm3210e-eval_xl\i2croutines.o: F:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\stm3210e-eval_xl\i2croutines.o: ..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+.\stm3210e-eval_xl\i2croutines.o: ..\inc\stm32f10x_conf.h
+.\stm3210e-eval_xl\i2croutines.o: ..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h
+.\stm3210e-eval_xl\i2croutines.o: ..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\stm3210e-eval_xl\i2croutines.o: ..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h
+.\stm3210e-eval_xl\i2croutines.o: ..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h
+.\stm3210e-eval_xl\i2croutines.o: ..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_i2c.h
+.\stm3210e-eval_xl\i2croutines.o: ..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h
+.\stm3210e-eval_xl\i2croutines.o: ..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
