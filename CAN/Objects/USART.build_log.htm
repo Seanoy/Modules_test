@@ -1,0 +1,55 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.21.1.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: ouyang sean, dawn, LIC=WHYHL-0HYFR-Y8SFK-ZP1FG-1ZVPK-KDWBU
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.24.1
+Toolchain Path:  F:\keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DARMSTM.DLL V1.68.0.0
+Target DLL:      UL2CM3.DLL V1.160.3.0
+Dialog DLL:      TARMSTM.DLL V1.66.0.0
+ 
+<h2>Project:</h2>
+C:\Users\Administrator\Desktop\CAN\USART.uvprojx
+Project File Date:  02/26/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'F:\keil\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling bsp_can_slave.c...
+compiling bsp_can_master.c...
+BSP\res\bsp_can_master.c(151): warning:  #1-D: last line of file ends without a newline
+  	
+BSP\res\bsp_can_master.c: 1 warning, 0 errors
+linking...
+.\Objects\USART.axf: Error: L6200E: Symbol USB_LP_CAN1_RX0_IRQHandler multiply defined (by bsp_can_slave.o and bsp_can_master.o).
+.\Objects\USART.axf: Error: L6200E: Symbol TXMessage multiply defined (by bsp_can_slave.o and bsp_can_master.o).
+.\Objects\USART.axf: Error: L6200E: Symbol RXMessage multiply defined (by bsp_can_slave.o and bsp_can_master.o).
+.\Objects\USART.axf: Error: L6200E: Symbol RXBUF multiply defined (by bsp_can_slave.o and bsp_can_master.o).
+.\Objects\USART.axf: Error: L6200E: Symbol RX_FLAG multiply defined (by bsp_can_slave.o and bsp_can_master.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 5 error messages.
+".\Objects\USART.axf" - 5 Error(s), 1 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\Administrator\Desktop\CAN\RTE
+  F:\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
