@@ -4,9 +4,9 @@ GPIO_InitTypeDef GPIO_InitStructure;
 ErrorStatus HSEStartUpStatus;
 char  test_flag=0; 				 //IIC用到
 unsigned char TX_DATA[4];  	 //显示据缓存区
-unsigned char BUF[10];       //接收数据缓存区
+unsigned char BUF[14];       //接收数据缓存区
 short T_X,T_Y,T_Z,T_T;		 //X,Y,Z轴，温度
-
+short A_X,A_Y,A_Z;
 
   /*******************************/
 void DATA_printf(uchar *s,short temp_data)
@@ -499,7 +499,7 @@ void READ_MPU6050(void)
    BUF[0]=Single_Read(MPU6050_Addr,GYRO_XOUT_L); 
    BUF[1]=Single_Read(MPU6050_Addr,GYRO_XOUT_H);
    T_X=	(BUF[1]<<8)|BUF[0];
-   T_X/=16.4; 						   //读取计算X轴数据
+   T_X/=16.4; 						   //读取计算X轴数据角速度
 
    BUF[2]=Single_Read(MPU6050_Addr,GYRO_YOUT_L);
    BUF[3]=Single_Read(MPU6050_Addr,GYRO_YOUT_H);
@@ -514,6 +514,20 @@ void READ_MPU6050(void)
    BUF[7]=Single_Read(MPU6050_Addr,TEMP_OUT_H); 
    T_T=(BUF[7]<<8)|BUF[6];
    T_T = 35+ ((double) (T_T + 13200)) / 280;// 读取计算出温度
+	
+	
+	 BUF[8]=Single_Read(MPU6050_Addr,ACCEL_XOUT_L); 
+   BUF[9]=Single_Read(MPU6050_Addr,ACCEL_XOUT_H);
+   A_X=	(BUF[9]<<8)|BUF[8];
+   A_X/=16.4; 						   //读取计算X轴数据加速度
+   BUF[10]=Single_Read(MPU6050_Addr,ACCEL_YOUT_L);
+   BUF[11]=Single_Read(MPU6050_Addr,ACCEL_YOUT_H);
+   A_Y=	(BUF[11]<<8)|BUF[10];
+   A_Y/=16.4; 						   //读取计算Y轴数据
+   BUF[12]=Single_Read(MPU6050_Addr,ACCEL_ZOUT_L);
+   BUF[13]=Single_Read(MPU6050_Addr,ACCEL_ZOUT_H);
+   A_Z=	(BUF[13]<<8)|BUF[12];
+   A_Z/=16.4; 					       //读取计算Z轴数据
 }
  //********串口发送数据***************************************
  void Send_data(uchar axis)
@@ -535,8 +549,20 @@ void READ_MPU6050(void)
 	Send_data('Y');			 //发送Y轴数
 	DATA_printf(TX_DATA,T_Z);//转换Z轴数据到数组
 	Send_data('Z');			 //发送Z轴数
+	USART1_SendData(0X0D);	 //换行
+	USART1_SendData(0X0A);	 //回车
 	DATA_printf(TX_DATA,T_T);//转换温度数据到数组
 	Send_data('T');			 //发送温度数据
+	USART1_SendData(0X0D);	 //换行
+	USART1_SendData(0X0A);	 //回车
+	DATA_printf(TX_DATA,A_X);//转换X轴数据到数组
+	Send_data('X');			 //发送X轴数
+	DATA_printf(TX_DATA,A_Y);//转换Y轴数据到数组
+	Send_data('Y');			 //发送Y轴数
+	DATA_printf(TX_DATA,A_Z);//转换Z轴数据到数组
+	Send_data('Z');			 //发送Z轴数
+	USART1_SendData(0X0D);	 //换行
+	USART1_SendData(0X0A);	 //回车
 	USART1_SendData(0X0D);	 //换行
 	USART1_SendData(0X0A);	 //回车
 	Delayms(100);				 //延时

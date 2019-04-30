@@ -129,7 +129,6 @@ Section Cross References
     bsp_mpu6050.o(i.RCC_Configuration) refers to stm32f10x_rcc.o(i.RCC_GetFlagStatus) for RCC_GetFlagStatus
     bsp_mpu6050.o(i.RCC_Configuration) refers to stm32f10x_rcc.o(i.RCC_SYSCLKConfig) for RCC_SYSCLKConfig
     bsp_mpu6050.o(i.RCC_Configuration) refers to stm32f10x_rcc.o(i.RCC_GetSYSCLKSource) for RCC_GetSYSCLKSource
-    bsp_mpu6050.o(i.RCC_Configuration) refers to stm32f10x_rcc.o(i.RCC_APB2PeriphClockCmd) for RCC_APB2PeriphClockCmd
     bsp_mpu6050.o(i.RCC_Configuration) refers to bsp_mpu6050.o(.data) for HSEStartUpStatus
     bsp_mpu6050.o(i.READ_MPU6050) refers to bsp_mpu6050.o(i.Single_Read) for Single_Read
     bsp_mpu6050.o(i.READ_MPU6050) refers to dflti.o(.text) for __aeabi_i2d
@@ -1039,61 +1038,61 @@ Image Symbol Table
     i.PendSV_Handler                         0x08000a2c   Section        0  stm32f10x_it.o(i.PendSV_Handler)
     i.RCC_APB2PeriphClockCmd                 0x08000a30   Section        0  stm32f10x_rcc.o(i.RCC_APB2PeriphClockCmd)
     i.RCC_Configuration                      0x08000a50   Section        0  bsp_mpu6050.o(i.RCC_Configuration)
-    i.RCC_DeInit                             0x08000ae4   Section        0  stm32f10x_rcc.o(i.RCC_DeInit)
-    i.RCC_GetClocksFreq                      0x08000b30   Section        0  stm32f10x_rcc.o(i.RCC_GetClocksFreq)
-    i.RCC_GetFlagStatus                      0x08000c04   Section        0  stm32f10x_rcc.o(i.RCC_GetFlagStatus)
-    i.RCC_GetSYSCLKSource                    0x08000c40   Section        0  stm32f10x_rcc.o(i.RCC_GetSYSCLKSource)
-    i.RCC_HCLKConfig                         0x08000c50   Section        0  stm32f10x_rcc.o(i.RCC_HCLKConfig)
-    i.RCC_HSEConfig                          0x08000c68   Section        0  stm32f10x_rcc.o(i.RCC_HSEConfig)
-    i.RCC_PCLK1Config                        0x08000cb4   Section        0  stm32f10x_rcc.o(i.RCC_PCLK1Config)
-    i.RCC_PCLK2Config                        0x08000ccc   Section        0  stm32f10x_rcc.o(i.RCC_PCLK2Config)
-    i.RCC_PLLCmd                             0x08000ce4   Section        0  stm32f10x_rcc.o(i.RCC_PLLCmd)
-    i.RCC_PLLConfig                          0x08000cf0   Section        0  stm32f10x_rcc.o(i.RCC_PLLConfig)
-    i.RCC_SYSCLKConfig                       0x08000d0c   Section        0  stm32f10x_rcc.o(i.RCC_SYSCLKConfig)
-    i.RCC_WaitForHSEStartUp                  0x08000d24   Section        0  stm32f10x_rcc.o(i.RCC_WaitForHSEStartUp)
-    i.READ_MPU6050                           0x08000d5c   Section        0  bsp_mpu6050.o(i.READ_MPU6050)
-    i.SVC_Handler                            0x08000ebc   Section        0  stm32f10x_it.o(i.SVC_Handler)
-    i.Send_data                              0x08000ec0   Section        0  bsp_mpu6050.o(i.Send_data)
-    i.SetSysClock                            0x08000ef8   Section        0  system_stm32f10x.o(i.SetSysClock)
-    SetSysClock                              0x08000ef9   Thumb Code     8  system_stm32f10x.o(i.SetSysClock)
-    i.SetSysClockTo72                        0x08000f00   Section        0  system_stm32f10x.o(i.SetSysClockTo72)
-    SetSysClockTo72                          0x08000f01   Thumb Code   214  system_stm32f10x.o(i.SetSysClockTo72)
-    i.Single_Read                            0x08000fe0   Section        0  bsp_mpu6050.o(i.Single_Read)
-    i.Single_Write                           0x0800103c   Section        0  bsp_mpu6050.o(i.Single_Write)
-    i.SysTick_Handler                        0x08001082   Section        0  stm32f10x_it.o(i.SysTick_Handler)
-    i.SystemInit                             0x08001084   Section        0  system_stm32f10x.o(i.SystemInit)
-    i.USART1_IRQHandler                      0x080010e4   Section        0  stm32f10x_it.o(i.USART1_IRQHandler)
-    i.USART1_SendData                        0x08001108   Section        0  bsp_mpu6050.o(i.USART1_SendData)
-    i.USART_Cmd                              0x08001120   Section        0  stm32f10x_usart.o(i.USART_Cmd)
-    i.USART_Config                           0x08001138   Section        0  usart.o(i.USART_Config)
-    i.USART_GetFlagStatus                    0x080011c8   Section        0  stm32f10x_usart.o(i.USART_GetFlagStatus)
-    i.USART_GetITStatus                      0x080011e2   Section        0  stm32f10x_usart.o(i.USART_GetITStatus)
-    i.USART_ITConfig                         0x08001236   Section        0  stm32f10x_usart.o(i.USART_ITConfig)
-    i.USART_Init                             0x08001280   Section        0  stm32f10x_usart.o(i.USART_Init)
-    i.USART_ReceiveData                      0x08001358   Section        0  stm32f10x_usart.o(i.USART_ReceiveData)
-    i.USART_SendData                         0x08001362   Section        0  stm32f10x_usart.o(i.USART_SendData)
-    i.UsageFault_Handler                     0x0800136a   Section        0  stm32f10x_it.o(i.UsageFault_Handler)
-    i.WWDG_ClearFlag                         0x08001370   Section        0  stm32f10x_wwdg.o(i.WWDG_ClearFlag)
-    i.WWDG_IRQHandler                        0x0800137c   Section        0  bsp_mpu6050.o(i.WWDG_IRQHandler)
-    i.WWDG_SetCounter                        0x0800138c   Section        0  stm32f10x_wwdg.o(i.WWDG_SetCounter)
-    i.__0printf$bare                         0x0800139c   Section        0  printfb.o(i.__0printf$bare)
-    i.__scatterload_copy                     0x080013ac   Section       14  handlers.o(i.__scatterload_copy)
-    i.__scatterload_null                     0x080013ba   Section        2  handlers.o(i.__scatterload_null)
-    i.__scatterload_zeroinit                 0x080013bc   Section       14  handlers.o(i.__scatterload_zeroinit)
-    i._printf_core                           0x080013ca   Section        0  printfb.o(i._printf_core)
-    _printf_core                             0x080013cb   Thumb Code    34  printfb.o(i._printf_core)
-    i.bsp_init                               0x080013ec   Section        0  bsp.o(i.bsp_init)
-    i.delay5ms                               0x08001498   Section        0  bsp_mpu6050.o(i.delay5ms)
-    i.fputc                                  0x080014a8   Section        0  usart.o(i.fputc)
-    i.main                                   0x080014cc   Section        0  main.o(i.main)
-    i.test                                   0x080014d8   Section        0  bsp_mpu6050.o(i.test)
+    i.RCC_DeInit                             0x08000ac4   Section        0  stm32f10x_rcc.o(i.RCC_DeInit)
+    i.RCC_GetClocksFreq                      0x08000b10   Section        0  stm32f10x_rcc.o(i.RCC_GetClocksFreq)
+    i.RCC_GetFlagStatus                      0x08000be4   Section        0  stm32f10x_rcc.o(i.RCC_GetFlagStatus)
+    i.RCC_GetSYSCLKSource                    0x08000c20   Section        0  stm32f10x_rcc.o(i.RCC_GetSYSCLKSource)
+    i.RCC_HCLKConfig                         0x08000c30   Section        0  stm32f10x_rcc.o(i.RCC_HCLKConfig)
+    i.RCC_HSEConfig                          0x08000c48   Section        0  stm32f10x_rcc.o(i.RCC_HSEConfig)
+    i.RCC_PCLK1Config                        0x08000c94   Section        0  stm32f10x_rcc.o(i.RCC_PCLK1Config)
+    i.RCC_PCLK2Config                        0x08000cac   Section        0  stm32f10x_rcc.o(i.RCC_PCLK2Config)
+    i.RCC_PLLCmd                             0x08000cc4   Section        0  stm32f10x_rcc.o(i.RCC_PLLCmd)
+    i.RCC_PLLConfig                          0x08000cd0   Section        0  stm32f10x_rcc.o(i.RCC_PLLConfig)
+    i.RCC_SYSCLKConfig                       0x08000cec   Section        0  stm32f10x_rcc.o(i.RCC_SYSCLKConfig)
+    i.RCC_WaitForHSEStartUp                  0x08000d04   Section        0  stm32f10x_rcc.o(i.RCC_WaitForHSEStartUp)
+    i.READ_MPU6050                           0x08000d3c   Section        0  bsp_mpu6050.o(i.READ_MPU6050)
+    i.SVC_Handler                            0x08000f84   Section        0  stm32f10x_it.o(i.SVC_Handler)
+    i.Send_data                              0x08000f88   Section        0  bsp_mpu6050.o(i.Send_data)
+    i.SetSysClock                            0x08000fc0   Section        0  system_stm32f10x.o(i.SetSysClock)
+    SetSysClock                              0x08000fc1   Thumb Code     8  system_stm32f10x.o(i.SetSysClock)
+    i.SetSysClockTo72                        0x08000fc8   Section        0  system_stm32f10x.o(i.SetSysClockTo72)
+    SetSysClockTo72                          0x08000fc9   Thumb Code   214  system_stm32f10x.o(i.SetSysClockTo72)
+    i.Single_Read                            0x080010a8   Section        0  bsp_mpu6050.o(i.Single_Read)
+    i.Single_Write                           0x08001104   Section        0  bsp_mpu6050.o(i.Single_Write)
+    i.SysTick_Handler                        0x0800114a   Section        0  stm32f10x_it.o(i.SysTick_Handler)
+    i.SystemInit                             0x0800114c   Section        0  system_stm32f10x.o(i.SystemInit)
+    i.USART1_IRQHandler                      0x080011ac   Section        0  stm32f10x_it.o(i.USART1_IRQHandler)
+    i.USART1_SendData                        0x080011d0   Section        0  bsp_mpu6050.o(i.USART1_SendData)
+    i.USART_Cmd                              0x080011e8   Section        0  stm32f10x_usart.o(i.USART_Cmd)
+    i.USART_Config                           0x08001200   Section        0  usart.o(i.USART_Config)
+    i.USART_GetFlagStatus                    0x08001290   Section        0  stm32f10x_usart.o(i.USART_GetFlagStatus)
+    i.USART_GetITStatus                      0x080012aa   Section        0  stm32f10x_usart.o(i.USART_GetITStatus)
+    i.USART_ITConfig                         0x080012fe   Section        0  stm32f10x_usart.o(i.USART_ITConfig)
+    i.USART_Init                             0x08001348   Section        0  stm32f10x_usart.o(i.USART_Init)
+    i.USART_ReceiveData                      0x08001420   Section        0  stm32f10x_usart.o(i.USART_ReceiveData)
+    i.USART_SendData                         0x0800142a   Section        0  stm32f10x_usart.o(i.USART_SendData)
+    i.UsageFault_Handler                     0x08001432   Section        0  stm32f10x_it.o(i.UsageFault_Handler)
+    i.WWDG_ClearFlag                         0x08001438   Section        0  stm32f10x_wwdg.o(i.WWDG_ClearFlag)
+    i.WWDG_IRQHandler                        0x08001444   Section        0  bsp_mpu6050.o(i.WWDG_IRQHandler)
+    i.WWDG_SetCounter                        0x08001454   Section        0  stm32f10x_wwdg.o(i.WWDG_SetCounter)
+    i.__0printf$bare                         0x08001464   Section        0  printfb.o(i.__0printf$bare)
+    i.__scatterload_copy                     0x08001474   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x08001482   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x08001484   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i._printf_core                           0x08001492   Section        0  printfb.o(i._printf_core)
+    _printf_core                             0x08001493   Thumb Code    34  printfb.o(i._printf_core)
+    i.bsp_init                               0x080014b4   Section        0  bsp.o(i.bsp_init)
+    i.delay5ms                               0x08001560   Section        0  bsp_mpu6050.o(i.delay5ms)
+    i.fputc                                  0x08001570   Section        0  usart.o(i.fputc)
+    i.main                                   0x08001594   Section        0  main.o(i.main)
+    i.test                                   0x080015a0   Section        0  bsp_mpu6050.o(i.test)
     .data                                    0x20000000   Section       20  stm32f10x_rcc.o(.data)
     APBAHBPrescTable                         0x20000000   Data          16  stm32f10x_rcc.o(.data)
     ADCPrescTable                            0x20000010   Data           4  stm32f10x_rcc.o(.data)
-    .data                                    0x20000014   Section       18  bsp_mpu6050.o(.data)
-    .data                                    0x20000028   Section        4  stdout.o(.data)
-    .bss                                     0x2000002c   Section       10  bsp_mpu6050.o(.bss)
-    STACK                                    0x20000038   Section     1024  startup_stm32f10x_hd.o(STACK)
+    .data                                    0x20000014   Section       24  bsp_mpu6050.o(.data)
+    .data                                    0x2000002c   Section        4  stdout.o(.data)
+    .bss                                     0x20000030   Section       14  bsp_mpu6050.o(.bss)
+    STACK                                    0x20000040   Section     1024  startup_stm32f10x_hd.o(STACK)
 
     Global Symbols
 
@@ -1218,53 +1217,53 @@ Image Symbol Table
     NVIC_PriorityGroupConfig                 0x08000a19   Thumb Code    10  misc.o(i.NVIC_PriorityGroupConfig)
     PendSV_Handler                           0x08000a2d   Thumb Code     2  stm32f10x_it.o(i.PendSV_Handler)
     RCC_APB2PeriphClockCmd                   0x08000a31   Thumb Code    26  stm32f10x_rcc.o(i.RCC_APB2PeriphClockCmd)
-    RCC_Configuration                        0x08000a51   Thumb Code   144  bsp_mpu6050.o(i.RCC_Configuration)
-    RCC_DeInit                               0x08000ae5   Thumb Code    64  stm32f10x_rcc.o(i.RCC_DeInit)
-    RCC_GetClocksFreq                        0x08000b31   Thumb Code   192  stm32f10x_rcc.o(i.RCC_GetClocksFreq)
-    RCC_GetFlagStatus                        0x08000c05   Thumb Code    56  stm32f10x_rcc.o(i.RCC_GetFlagStatus)
-    RCC_GetSYSCLKSource                      0x08000c41   Thumb Code    10  stm32f10x_rcc.o(i.RCC_GetSYSCLKSource)
-    RCC_HCLKConfig                           0x08000c51   Thumb Code    18  stm32f10x_rcc.o(i.RCC_HCLKConfig)
-    RCC_HSEConfig                            0x08000c69   Thumb Code    70  stm32f10x_rcc.o(i.RCC_HSEConfig)
-    RCC_PCLK1Config                          0x08000cb5   Thumb Code    18  stm32f10x_rcc.o(i.RCC_PCLK1Config)
-    RCC_PCLK2Config                          0x08000ccd   Thumb Code    20  stm32f10x_rcc.o(i.RCC_PCLK2Config)
-    RCC_PLLCmd                               0x08000ce5   Thumb Code     6  stm32f10x_rcc.o(i.RCC_PLLCmd)
-    RCC_PLLConfig                            0x08000cf1   Thumb Code    24  stm32f10x_rcc.o(i.RCC_PLLConfig)
-    RCC_SYSCLKConfig                         0x08000d0d   Thumb Code    18  stm32f10x_rcc.o(i.RCC_SYSCLKConfig)
-    RCC_WaitForHSEStartUp                    0x08000d25   Thumb Code    56  stm32f10x_rcc.o(i.RCC_WaitForHSEStartUp)
-    READ_MPU6050                             0x08000d5d   Thumb Code   318  bsp_mpu6050.o(i.READ_MPU6050)
-    SVC_Handler                              0x08000ebd   Thumb Code     2  stm32f10x_it.o(i.SVC_Handler)
-    Send_data                                0x08000ec1   Thumb Code    50  bsp_mpu6050.o(i.Send_data)
-    Single_Read                              0x08000fe1   Thumb Code    86  bsp_mpu6050.o(i.Single_Read)
-    Single_Write                             0x0800103d   Thumb Code    70  bsp_mpu6050.o(i.Single_Write)
-    SysTick_Handler                          0x08001083   Thumb Code     2  stm32f10x_it.o(i.SysTick_Handler)
-    SystemInit                               0x08001085   Thumb Code    78  system_stm32f10x.o(i.SystemInit)
-    USART1_IRQHandler                        0x080010e5   Thumb Code    32  stm32f10x_it.o(i.USART1_IRQHandler)
-    USART1_SendData                          0x08001109   Thumb Code    20  bsp_mpu6050.o(i.USART1_SendData)
-    USART_Cmd                                0x08001121   Thumb Code    24  stm32f10x_usart.o(i.USART_Cmd)
-    USART_Config                             0x08001139   Thumb Code   136  usart.o(i.USART_Config)
-    USART_GetFlagStatus                      0x080011c9   Thumb Code    26  stm32f10x_usart.o(i.USART_GetFlagStatus)
-    USART_GetITStatus                        0x080011e3   Thumb Code    84  stm32f10x_usart.o(i.USART_GetITStatus)
-    USART_ITConfig                           0x08001237   Thumb Code    74  stm32f10x_usart.o(i.USART_ITConfig)
-    USART_Init                               0x08001281   Thumb Code   210  stm32f10x_usart.o(i.USART_Init)
-    USART_ReceiveData                        0x08001359   Thumb Code    10  stm32f10x_usart.o(i.USART_ReceiveData)
-    USART_SendData                           0x08001363   Thumb Code     8  stm32f10x_usart.o(i.USART_SendData)
-    UsageFault_Handler                       0x0800136b   Thumb Code     4  stm32f10x_it.o(i.UsageFault_Handler)
-    WWDG_ClearFlag                           0x08001371   Thumb Code     8  stm32f10x_wwdg.o(i.WWDG_ClearFlag)
-    WWDG_IRQHandler                          0x0800137d   Thumb Code    14  bsp_mpu6050.o(i.WWDG_IRQHandler)
-    WWDG_SetCounter                          0x0800138d   Thumb Code    10  stm32f10x_wwdg.o(i.WWDG_SetCounter)
-    __0printf$bare                           0x0800139d   Thumb Code     8  printfb.o(i.__0printf$bare)
-    __1printf$bare                           0x0800139d   Thumb Code     0  printfb.o(i.__0printf$bare)
-    __2printf                                0x0800139d   Thumb Code     0  printfb.o(i.__0printf$bare)
-    __scatterload_copy                       0x080013ad   Thumb Code    14  handlers.o(i.__scatterload_copy)
-    __scatterload_null                       0x080013bb   Thumb Code     2  handlers.o(i.__scatterload_null)
-    __scatterload_zeroinit                   0x080013bd   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
-    bsp_init                                 0x080013ed   Thumb Code    60  bsp.o(i.bsp_init)
-    delay5ms                                 0x08001499   Thumb Code    14  bsp_mpu6050.o(i.delay5ms)
-    fputc                                    0x080014a9   Thumb Code    32  usart.o(i.fputc)
-    main                                     0x080014cd   Thumb Code    12  main.o(i.main)
-    test                                     0x080014d9   Thumb Code    98  bsp_mpu6050.o(i.test)
-    Region$$Table$$Base                      0x08001550   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08001570   Number         0  anon$$obj.o(Region$$Table)
+    RCC_Configuration                        0x08000a51   Thumb Code   110  bsp_mpu6050.o(i.RCC_Configuration)
+    RCC_DeInit                               0x08000ac5   Thumb Code    64  stm32f10x_rcc.o(i.RCC_DeInit)
+    RCC_GetClocksFreq                        0x08000b11   Thumb Code   192  stm32f10x_rcc.o(i.RCC_GetClocksFreq)
+    RCC_GetFlagStatus                        0x08000be5   Thumb Code    56  stm32f10x_rcc.o(i.RCC_GetFlagStatus)
+    RCC_GetSYSCLKSource                      0x08000c21   Thumb Code    10  stm32f10x_rcc.o(i.RCC_GetSYSCLKSource)
+    RCC_HCLKConfig                           0x08000c31   Thumb Code    18  stm32f10x_rcc.o(i.RCC_HCLKConfig)
+    RCC_HSEConfig                            0x08000c49   Thumb Code    70  stm32f10x_rcc.o(i.RCC_HSEConfig)
+    RCC_PCLK1Config                          0x08000c95   Thumb Code    18  stm32f10x_rcc.o(i.RCC_PCLK1Config)
+    RCC_PCLK2Config                          0x08000cad   Thumb Code    20  stm32f10x_rcc.o(i.RCC_PCLK2Config)
+    RCC_PLLCmd                               0x08000cc5   Thumb Code     6  stm32f10x_rcc.o(i.RCC_PLLCmd)
+    RCC_PLLConfig                            0x08000cd1   Thumb Code    24  stm32f10x_rcc.o(i.RCC_PLLConfig)
+    RCC_SYSCLKConfig                         0x08000ced   Thumb Code    18  stm32f10x_rcc.o(i.RCC_SYSCLKConfig)
+    RCC_WaitForHSEStartUp                    0x08000d05   Thumb Code    56  stm32f10x_rcc.o(i.RCC_WaitForHSEStartUp)
+    READ_MPU6050                             0x08000d3d   Thumb Code   540  bsp_mpu6050.o(i.READ_MPU6050)
+    SVC_Handler                              0x08000f85   Thumb Code     2  stm32f10x_it.o(i.SVC_Handler)
+    Send_data                                0x08000f89   Thumb Code    50  bsp_mpu6050.o(i.Send_data)
+    Single_Read                              0x080010a9   Thumb Code    86  bsp_mpu6050.o(i.Single_Read)
+    Single_Write                             0x08001105   Thumb Code    70  bsp_mpu6050.o(i.Single_Write)
+    SysTick_Handler                          0x0800114b   Thumb Code     2  stm32f10x_it.o(i.SysTick_Handler)
+    SystemInit                               0x0800114d   Thumb Code    78  system_stm32f10x.o(i.SystemInit)
+    USART1_IRQHandler                        0x080011ad   Thumb Code    32  stm32f10x_it.o(i.USART1_IRQHandler)
+    USART1_SendData                          0x080011d1   Thumb Code    20  bsp_mpu6050.o(i.USART1_SendData)
+    USART_Cmd                                0x080011e9   Thumb Code    24  stm32f10x_usart.o(i.USART_Cmd)
+    USART_Config                             0x08001201   Thumb Code   136  usart.o(i.USART_Config)
+    USART_GetFlagStatus                      0x08001291   Thumb Code    26  stm32f10x_usart.o(i.USART_GetFlagStatus)
+    USART_GetITStatus                        0x080012ab   Thumb Code    84  stm32f10x_usart.o(i.USART_GetITStatus)
+    USART_ITConfig                           0x080012ff   Thumb Code    74  stm32f10x_usart.o(i.USART_ITConfig)
+    USART_Init                               0x08001349   Thumb Code   210  stm32f10x_usart.o(i.USART_Init)
+    USART_ReceiveData                        0x08001421   Thumb Code    10  stm32f10x_usart.o(i.USART_ReceiveData)
+    USART_SendData                           0x0800142b   Thumb Code     8  stm32f10x_usart.o(i.USART_SendData)
+    UsageFault_Handler                       0x08001433   Thumb Code     4  stm32f10x_it.o(i.UsageFault_Handler)
+    WWDG_ClearFlag                           0x08001439   Thumb Code     8  stm32f10x_wwdg.o(i.WWDG_ClearFlag)
+    WWDG_IRQHandler                          0x08001445   Thumb Code    14  bsp_mpu6050.o(i.WWDG_IRQHandler)
+    WWDG_SetCounter                          0x08001455   Thumb Code    10  stm32f10x_wwdg.o(i.WWDG_SetCounter)
+    __0printf$bare                           0x08001465   Thumb Code     8  printfb.o(i.__0printf$bare)
+    __1printf$bare                           0x08001465   Thumb Code     0  printfb.o(i.__0printf$bare)
+    __2printf                                0x08001465   Thumb Code     0  printfb.o(i.__0printf$bare)
+    __scatterload_copy                       0x08001475   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x08001483   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x08001485   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    bsp_init                                 0x080014b5   Thumb Code    60  bsp.o(i.bsp_init)
+    delay5ms                                 0x08001561   Thumb Code    14  bsp_mpu6050.o(i.delay5ms)
+    fputc                                    0x08001571   Thumb Code    32  usart.o(i.fputc)
+    main                                     0x08001595   Thumb Code    12  main.o(i.main)
+    test                                     0x080015a1   Thumb Code   188  bsp_mpu6050.o(i.test)
+    Region$$Table$$Base                      0x0800167c   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x0800169c   Number         0  anon$$obj.o(Region$$Table)
     GPIO_InitStructure                       0x20000014   Data           4  bsp_mpu6050.o(.data)
     HSEStartUpStatus                         0x20000018   Data           1  bsp_mpu6050.o(.data)
     test_flag                                0x20000019   Data           1  bsp_mpu6050.o(.data)
@@ -1273,9 +1272,12 @@ Image Symbol Table
     T_Y                                      0x20000020   Data           2  bsp_mpu6050.o(.data)
     T_Z                                      0x20000022   Data           2  bsp_mpu6050.o(.data)
     T_T                                      0x20000024   Data           2  bsp_mpu6050.o(.data)
-    __stdout                                 0x20000028   Data           4  stdout.o(.data)
-    BUF                                      0x2000002c   Data          10  bsp_mpu6050.o(.bss)
-    __initial_sp                             0x20000438   Data           0  startup_stm32f10x_hd.o(STACK)
+    A_X                                      0x20000026   Data           2  bsp_mpu6050.o(.data)
+    A_Y                                      0x20000028   Data           2  bsp_mpu6050.o(.data)
+    A_Z                                      0x2000002a   Data           2  bsp_mpu6050.o(.data)
+    __stdout                                 0x2000002c   Data           4  stdout.o(.data)
+    BUF                                      0x20000030   Data          14  bsp_mpu6050.o(.bss)
+    __initial_sp                             0x20000440   Data           0  startup_stm32f10x_hd.o(STACK)
 
 
 
@@ -1285,9 +1287,9 @@ Memory Map of the image
 
   Image Entry point : 0x08000131
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x0000159c, Max: 0x00080000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x000016cc, Max: 0x00080000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x00001570, Max: 0x00080000, ABSOLUTE)
+    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x0000169c, Max: 0x00080000, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -1340,70 +1342,69 @@ Memory Map of the image
     0x08000a2c   0x00000002   Code   RO          130    i.PendSV_Handler    stm32f10x_it.o
     0x08000a2e   0x00000002   PAD
     0x08000a30   0x00000020   Code   RO         1832    i.RCC_APB2PeriphClockCmd  stm32f10x_rcc.o
-    0x08000a50   0x00000094   Code   RO         3266    i.RCC_Configuration  bsp_mpu6050.o
-    0x08000ae4   0x0000004c   Code   RO         1839    i.RCC_DeInit        stm32f10x_rcc.o
-    0x08000b30   0x000000d4   Code   RO         1840    i.RCC_GetClocksFreq  stm32f10x_rcc.o
-    0x08000c04   0x0000003c   Code   RO         1841    i.RCC_GetFlagStatus  stm32f10x_rcc.o
-    0x08000c40   0x00000010   Code   RO         1843    i.RCC_GetSYSCLKSource  stm32f10x_rcc.o
-    0x08000c50   0x00000018   Code   RO         1844    i.RCC_HCLKConfig    stm32f10x_rcc.o
-    0x08000c68   0x0000004c   Code   RO         1845    i.RCC_HSEConfig     stm32f10x_rcc.o
-    0x08000cb4   0x00000018   Code   RO         1851    i.RCC_PCLK1Config   stm32f10x_rcc.o
-    0x08000ccc   0x00000018   Code   RO         1852    i.RCC_PCLK2Config   stm32f10x_rcc.o
-    0x08000ce4   0x0000000c   Code   RO         1853    i.RCC_PLLCmd        stm32f10x_rcc.o
-    0x08000cf0   0x0000001c   Code   RO         1854    i.RCC_PLLConfig     stm32f10x_rcc.o
-    0x08000d0c   0x00000018   Code   RO         1857    i.RCC_SYSCLKConfig  stm32f10x_rcc.o
-    0x08000d24   0x00000038   Code   RO         1859    i.RCC_WaitForHSEStartUp  stm32f10x_rcc.o
-    0x08000d5c   0x00000160   Code   RO         3267    i.READ_MPU6050      bsp_mpu6050.o
-    0x08000ebc   0x00000002   Code   RO          131    i.SVC_Handler       stm32f10x_it.o
-    0x08000ebe   0x00000002   PAD
-    0x08000ec0   0x00000038   Code   RO         3268    i.Send_data         bsp_mpu6050.o
-    0x08000ef8   0x00000008   Code   RO           17    i.SetSysClock       system_stm32f10x.o
-    0x08000f00   0x000000e0   Code   RO           18    i.SetSysClockTo72   system_stm32f10x.o
-    0x08000fe0   0x0000005c   Code   RO         3269    i.Single_Read       bsp_mpu6050.o
-    0x0800103c   0x00000046   Code   RO         3270    i.Single_Write      bsp_mpu6050.o
-    0x08001082   0x00000002   Code   RO          132    i.SysTick_Handler   stm32f10x_it.o
-    0x08001084   0x00000060   Code   RO           20    i.SystemInit        system_stm32f10x.o
-    0x080010e4   0x00000024   Code   RO          133    i.USART1_IRQHandler  stm32f10x_it.o
-    0x08001108   0x00000018   Code   RO         3272    i.USART1_SendData   bsp_mpu6050.o
-    0x08001120   0x00000018   Code   RO         3009    i.USART_Cmd         stm32f10x_usart.o
-    0x08001138   0x00000090   Code   RO          198    i.USART_Config      usart.o
-    0x080011c8   0x0000001a   Code   RO         3012    i.USART_GetFlagStatus  stm32f10x_usart.o
-    0x080011e2   0x00000054   Code   RO         3013    i.USART_GetITStatus  stm32f10x_usart.o
-    0x08001236   0x0000004a   Code   RO         3015    i.USART_ITConfig    stm32f10x_usart.o
-    0x08001280   0x000000d8   Code   RO         3016    i.USART_Init        stm32f10x_usart.o
-    0x08001358   0x0000000a   Code   RO         3023    i.USART_ReceiveData  stm32f10x_usart.o
-    0x08001362   0x00000008   Code   RO         3026    i.USART_SendData    stm32f10x_usart.o
-    0x0800136a   0x00000004   Code   RO          134    i.UsageFault_Handler  stm32f10x_it.o
-    0x0800136e   0x00000002   PAD
-    0x08001370   0x0000000c   Code   RO         3185    i.WWDG_ClearFlag    stm32f10x_wwdg.o
-    0x0800137c   0x0000000e   Code   RO         3274    i.WWDG_IRQHandler   bsp_mpu6050.o
-    0x0800138a   0x00000002   PAD
-    0x0800138c   0x00000010   Code   RO         3190    i.WWDG_SetCounter   stm32f10x_wwdg.o
-    0x0800139c   0x00000010   Code   RO         3421    i.__0printf$bare    mc_w.l(printfb.o)
-    0x080013ac   0x0000000e   Code   RO         3726    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x080013ba   0x00000002   Code   RO         3727    i.__scatterload_null  mc_w.l(handlers.o)
-    0x080013bc   0x0000000e   Code   RO         3728    i.__scatterload_zeroinit  mc_w.l(handlers.o)
-    0x080013ca   0x00000022   Code   RO         3428    i._printf_core      mc_w.l(printfb.o)
-    0x080013ec   0x000000ac   Code   RO         3239    i.bsp_init          bsp.o
-    0x08001498   0x0000000e   Code   RO         3275    i.delay5ms          bsp_mpu6050.o
-    0x080014a6   0x00000002   PAD
-    0x080014a8   0x00000024   Code   RO          199    i.fputc             usart.o
-    0x080014cc   0x0000000c   Code   RO           82    i.main              main.o
-    0x080014d8   0x00000078   Code   RO         3276    i.test              bsp_mpu6050.o
-    0x08001550   0x00000020   Data   RO         3724    Region$$Table       anon$$obj.o
+    0x08000a50   0x00000074   Code   RO         3266    i.RCC_Configuration  bsp_mpu6050.o
+    0x08000ac4   0x0000004c   Code   RO         1839    i.RCC_DeInit        stm32f10x_rcc.o
+    0x08000b10   0x000000d4   Code   RO         1840    i.RCC_GetClocksFreq  stm32f10x_rcc.o
+    0x08000be4   0x0000003c   Code   RO         1841    i.RCC_GetFlagStatus  stm32f10x_rcc.o
+    0x08000c20   0x00000010   Code   RO         1843    i.RCC_GetSYSCLKSource  stm32f10x_rcc.o
+    0x08000c30   0x00000018   Code   RO         1844    i.RCC_HCLKConfig    stm32f10x_rcc.o
+    0x08000c48   0x0000004c   Code   RO         1845    i.RCC_HSEConfig     stm32f10x_rcc.o
+    0x08000c94   0x00000018   Code   RO         1851    i.RCC_PCLK1Config   stm32f10x_rcc.o
+    0x08000cac   0x00000018   Code   RO         1852    i.RCC_PCLK2Config   stm32f10x_rcc.o
+    0x08000cc4   0x0000000c   Code   RO         1853    i.RCC_PLLCmd        stm32f10x_rcc.o
+    0x08000cd0   0x0000001c   Code   RO         1854    i.RCC_PLLConfig     stm32f10x_rcc.o
+    0x08000cec   0x00000018   Code   RO         1857    i.RCC_SYSCLKConfig  stm32f10x_rcc.o
+    0x08000d04   0x00000038   Code   RO         1859    i.RCC_WaitForHSEStartUp  stm32f10x_rcc.o
+    0x08000d3c   0x00000248   Code   RO         3267    i.READ_MPU6050      bsp_mpu6050.o
+    0x08000f84   0x00000002   Code   RO          131    i.SVC_Handler       stm32f10x_it.o
+    0x08000f86   0x00000002   PAD
+    0x08000f88   0x00000038   Code   RO         3268    i.Send_data         bsp_mpu6050.o
+    0x08000fc0   0x00000008   Code   RO           17    i.SetSysClock       system_stm32f10x.o
+    0x08000fc8   0x000000e0   Code   RO           18    i.SetSysClockTo72   system_stm32f10x.o
+    0x080010a8   0x0000005c   Code   RO         3269    i.Single_Read       bsp_mpu6050.o
+    0x08001104   0x00000046   Code   RO         3270    i.Single_Write      bsp_mpu6050.o
+    0x0800114a   0x00000002   Code   RO          132    i.SysTick_Handler   stm32f10x_it.o
+    0x0800114c   0x00000060   Code   RO           20    i.SystemInit        system_stm32f10x.o
+    0x080011ac   0x00000024   Code   RO          133    i.USART1_IRQHandler  stm32f10x_it.o
+    0x080011d0   0x00000018   Code   RO         3272    i.USART1_SendData   bsp_mpu6050.o
+    0x080011e8   0x00000018   Code   RO         3009    i.USART_Cmd         stm32f10x_usart.o
+    0x08001200   0x00000090   Code   RO          198    i.USART_Config      usart.o
+    0x08001290   0x0000001a   Code   RO         3012    i.USART_GetFlagStatus  stm32f10x_usart.o
+    0x080012aa   0x00000054   Code   RO         3013    i.USART_GetITStatus  stm32f10x_usart.o
+    0x080012fe   0x0000004a   Code   RO         3015    i.USART_ITConfig    stm32f10x_usart.o
+    0x08001348   0x000000d8   Code   RO         3016    i.USART_Init        stm32f10x_usart.o
+    0x08001420   0x0000000a   Code   RO         3023    i.USART_ReceiveData  stm32f10x_usart.o
+    0x0800142a   0x00000008   Code   RO         3026    i.USART_SendData    stm32f10x_usart.o
+    0x08001432   0x00000004   Code   RO          134    i.UsageFault_Handler  stm32f10x_it.o
+    0x08001436   0x00000002   PAD
+    0x08001438   0x0000000c   Code   RO         3185    i.WWDG_ClearFlag    stm32f10x_wwdg.o
+    0x08001444   0x0000000e   Code   RO         3274    i.WWDG_IRQHandler   bsp_mpu6050.o
+    0x08001452   0x00000002   PAD
+    0x08001454   0x00000010   Code   RO         3190    i.WWDG_SetCounter   stm32f10x_wwdg.o
+    0x08001464   0x00000010   Code   RO         3421    i.__0printf$bare    mc_w.l(printfb.o)
+    0x08001474   0x0000000e   Code   RO         3726    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x08001482   0x00000002   Code   RO         3727    i.__scatterload_null  mc_w.l(handlers.o)
+    0x08001484   0x0000000e   Code   RO         3728    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x08001492   0x00000022   Code   RO         3428    i._printf_core      mc_w.l(printfb.o)
+    0x080014b4   0x000000ac   Code   RO         3239    i.bsp_init          bsp.o
+    0x08001560   0x0000000e   Code   RO         3275    i.delay5ms          bsp_mpu6050.o
+    0x0800156e   0x00000002   PAD
+    0x08001570   0x00000024   Code   RO          199    i.fputc             usart.o
+    0x08001594   0x0000000c   Code   RO           82    i.main              main.o
+    0x080015a0   0x000000dc   Code   RO         3276    i.test              bsp_mpu6050.o
+    0x0800167c   0x00000020   Data   RO         3724    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00000438, Max: 0x00010000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00000440, Max: 0x00010000, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x20000000   0x00000014   Data   RW         1860    .data               stm32f10x_rcc.o
-    0x20000014   0x00000012   Data   RW         3278    .data               bsp_mpu6050.o
-    0x20000026   0x00000002   PAD
-    0x20000028   0x00000004   Data   RW         3702    .data               mc_w.l(stdout.o)
-    0x2000002c   0x0000000a   Zero   RW         3277    .bss                bsp_mpu6050.o
-    0x20000036   0x00000002   PAD
-    0x20000038   0x00000400   Zero   RW          220    STACK               startup_stm32f10x_hd.o
+    0x20000014   0x00000018   Data   RW         3278    .data               bsp_mpu6050.o
+    0x2000002c   0x00000004   Data   RW         3702    .data               mc_w.l(stdout.o)
+    0x20000030   0x0000000e   Zero   RW         3277    .bss                bsp_mpu6050.o
+    0x2000003e   0x00000002   PAD
+    0x20000040   0x00000400   Zero   RW          220    STACK               startup_stm32f10x_hd.o
 
 
 ==============================================================================
@@ -1413,25 +1414,25 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       172        112          0          0          0        431   bsp.o
-      1642        114          0         18         10      11047   bsp_mpu6050.o
+       172        112          0          0          0        439   bsp.o
+      1942        136          0         24         14      11359   bsp_mpu6050.o
          0          0          0          0          0       4532   core_cm3.o
-        12          0          0          0          0     206271   main.o
-       132         22          0          0          0       1319   misc.o
-        36          8        304          0       1024        756   startup_stm32f10x_hd.o
-        52         12          0          0          0        965   stm32f10x_flash.o
-       278          0          0          0          0       1812   stm32f10x_gpio.o
-        62          4          0          0          0       3882   stm32f10x_it.o
-       664         86          0         20          0       8953   stm32f10x_rcc.o
-       442          6          0          0          0       5613   stm32f10x_usart.o
-        28         10          0          0          0        835   stm32f10x_wwdg.o
-       328         28          0          0          0      24661   system_stm32f10x.o
-       218         12          0          0          0       1419   usart.o
+        12          0          0          0          0     206295   main.o
+       132         22          0          0          0       1343   misc.o
+        36          8        304          0       1024        760   startup_stm32f10x_hd.o
+        52         12          0          0          0        977   stm32f10x_flash.o
+       278          0          0          0          0       1828   stm32f10x_gpio.o
+        62          4          0          0          0       3954   stm32f10x_it.o
+       664         86          0         20          0       9045   stm32f10x_rcc.o
+       442          6          0          0          0       5669   stm32f10x_usart.o
+        28         10          0          0          0        847   stm32f10x_wwdg.o
+       328         28          0          0          0      24705   system_stm32f10x.o
+       218         12          0          0          0       1439   usart.o
 
     ----------------------------------------------------------------------
-      4080        414        336         40       1036     272496   Object Totals
+      4380        436        336         44       1040     273192   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-        14          0          0          2          2          0   (incl. Padding)
+        14          0          0          0          2          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -1480,15 +1481,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      5152        438        336         44       1036     270012   Grand Totals
-      5152        438        336         44       1036     270012   ELF Image Totals
-      5152        438        336         44          0          0   ROM Totals
+      5452        460        336         48       1040     270708   Grand Totals
+      5452        460        336         48       1040     270708   ELF Image Totals
+      5452        460        336         48          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 5488 (   5.36kB)
-    Total RW  Size (RW Data + ZI Data)              1080 (   1.05kB)
-    Total ROM Size (Code + RO Data + RW Data)       5532 (   5.40kB)
+    Total RO  Size (Code + RO Data)                 5788 (   5.65kB)
+    Total RW  Size (RW Data + ZI Data)              1088 (   1.06kB)
+    Total ROM Size (Code + RO Data + RW Data)       5836 (   5.70kB)
 
 ==============================================================================
 

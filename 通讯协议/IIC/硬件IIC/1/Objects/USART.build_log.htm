@@ -21,24 +21,80 @@ Target DLL:      Segger\JL2CM3.dll V2.99.26.0
 Dialog DLL:      TARMSTM.DLL V1.66.0.0
  
 <h2>Project:</h2>
-F:\project_test\硬件IIC\USART.uvprojx
-Project File Date:  02/24/2019
+F:\project_test\通讯协议\IIC\硬件IIC\1\USART.uvprojx
+Project File Date:  04/07/2019
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 5 (build 528)', folder: 'F:\keil\ARM\ARMCC\Bin'
 Build target 'Target 1'
 compiling main.c...
-linking...
-Program Size: Code=6460 RO-data=336 RW-data=552 ZI-data=1584  
-FromELF: creating hex file...
-".\Objects\USART.axf" - 0 Error(s), 0 Warning(s).
+user\main.c(43): warning:  #223-D: function "I2C_Master_BufferWrite" declared implicitly
+  	I2C_Master_BufferWrite(I2C1, Buffer_Tx1,120,Interrupt, 0x28);	//以中断方式写
+user\main.c(43): error:  #20: identifier "Interrupt" is undefined
+  	I2C_Master_BufferWrite(
+user\main.c(44): warning:  #223-D: function "I2C_Master_BufferRead" declared implicitly
+    I2C_Master_BufferRead(I2C1,Buffer_Rx1,120,Polling, 0x28);			//以轮询方式读
+user\main.c(44): error:  #20: identifier "Polling" is undefined
+    I2C_Master_BufferRead(
+user\main.c: 2 warnings, 2 errors
+compiling stm32f10x_it.c...
+user\stm32f10x_it.c(245): error:  #20: identifier "CR1_PE_Set" is undefined
+              
+user\stm32f10x_it.c(272): error:  #20: identifier "I2C_DIRECTION_TX" is undefined
+              if (I2CDirection == I2C_DIRECTION_TX)
+user\stm32f10x_it.c(300): error:  #20: identifier "CR1_ACK_Reset" is undefined
+                      
+user\stm32f10x_it.c(302): error:  #20: identifier "CR1_STOP_Set" is undefined
+                      
+user\stm32f10x_it.c(336): error:  #20: identifier "CR1_STOP_Set" is undefined
+              
+user\stm32f10x_it.c(353): error:  #20: identifier "CR1_ACK_Reset" is undefined
+                  
+user\stm32f10x_it.c(355): error:  #20: identifier "CR1_STOP_Set" is undefined
+                  
+user\stm32f10x_it.c(441): error:  #20: identifier "CR1_PE_Set" is undefined
+              
+user\stm32f10x_it.c(467): error:  #20: identifier "I2C_DIRECTION_TX" is undefined
+              if (I2CDirection == I2C_DIRECTION_TX)
+user\stm32f10x_it.c(495): error:  #20: identifier "CR1_ACK_Reset" is undefined
+                      
+user\stm32f10x_it.c(497): error:  #20: identifier "CR1_STOP_Set" is undefined
+                      
+user\stm32f10x_it.c(531): error:  #20: identifier "CR1_STOP_Set" is undefined
+              
+user\stm32f10x_it.c(549): error:  #20: identifier "CR1_ACK_Reset" is undefined
+                  
+user\stm32f10x_it.c(551): error:  #20: identifier "CR1_STOP_Set" is undefined
+                  
+user\stm32f10x_it.c: 0 warnings, 14 errors
+compiling bsp.c...
+BSP\res\bsp.c(6): warning:  #223-D: function "NVIC_IIC_Configuration" declared implicitly
+  	NVIC_IIC_Configuration();
+BSP\res\bsp.c(7): warning:  #223-D: function "GPIO_IIC_Configuration" declared implicitly
+  	GPIO_IIC_Configuration();
+BSP\res\bsp.c(8): warning:  #223-D: function "I2C_LowLevel_Init" declared implicitly
+    I2C_LowLevel_Init(I2C2);
+BSP\res\bsp.c: 3 warnings, 0 errors
+compiling bsp_iic.c...
+BSP\res\bsp_iic.c(133): error:  #20: identifier "MPU6050_SLAVE_ADDRESS" is undefined
+    I2C_Send7bitAddress(
+acI2Cx, MPU6050_SLAVE_ADDRESS, I2C_Direction_Transmitter);
+BSP\res\bsp_iic.c(199): error:  #20: identifier "MPU6050_SLAVE_ADDRESS" is undefined
+    I2C_Send7bitAddress(
+acI2Cx, MPU6050_SLAVE_ADDRESS, I2C_Direction_Transmitter);
+BSP\res\bsp_iic.c(293): error:  #20: identifier "MPU6050_SLAVE_ADDRESS" is undefined
+      I2C_Send7bitAddress(
+acI2Cx, MPU6050_SLAVE_ADDRESS, I2C_Direction_Transmitter);
+BSP\res\bsp_iic.c: 0 warnings, 3 errors
+".\Objects\USART.axf" - 19 Error(s), 5 Warning(s).
 
 <h2>Collection of Component include folders:</h2>
-  F:\project_test\硬件IIC\RTE
+  F:\project_test\通讯协议\IIC\硬件IIC\1\RTE
   F:\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:12
+Target not created.
+Build Time Elapsed:  00:00:03
 </pre>
 </body>
 </html>

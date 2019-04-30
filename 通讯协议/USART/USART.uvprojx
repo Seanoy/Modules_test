@@ -550,6 +550,21 @@
               <FileType>1</FileType>
               <FilePath>.\BSP\src\bsp.c</FilePath>
             </File>
+            <File>
+              <FileName>bsp_sys.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\BSP\src\bsp_sys.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_systick.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\BSP\src\bsp_systick.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\BSP\src\bsp_led.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

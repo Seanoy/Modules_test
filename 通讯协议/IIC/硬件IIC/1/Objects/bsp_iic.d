@@ -13,3 +13,4 @@
 .\objects\bsp_iic.o: .\FWlib\inc\stm32f10x_rcc.h
 .\objects\bsp_iic.o: .\FWlib\inc\stm32f10x_usart.h
 .\objects\bsp_iic.o: .\FWlib\inc\misc.h
+.\objects\bsp_iic.o: F:\keil\ARM\ARMCC\Bin\..\include\stdio.h

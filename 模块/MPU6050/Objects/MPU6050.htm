@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\MPU6050.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\MPU6050.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060528: Last Updated: Wed Apr 03 14:18:53 2019
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060528: Last Updated: Mon Apr 08 10:54:28 2019
 <BR><P>
 <H3>Maximum Stack Usage =        128 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -538,15 +538,13 @@ Global Symbols
 </UL>
 <P><STRONG><a name="[59]"></a>RCC_APB2PeriphClockCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_APB2PeriphClockCmd))
 <BR><BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Config
-<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_Configuration
 <LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Configuration
 </UL>
 
-<P><STRONG><a name="[68]"></a>RCC_Configuration</STRONG> (Thumb, 144 bytes, Stack size 8 bytes, bsp_mpu6050.o(i.RCC_Configuration))
+<P><STRONG><a name="[68]"></a>RCC_Configuration</STRONG> (Thumb, 110 bytes, Stack size 8 bytes, bsp_mpu6050.o(i.RCC_Configuration))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = RCC_Configuration &rArr; RCC_WaitForHSEStartUp &rArr; RCC_GetFlagStatus
 </UL>
-<BR>[Calls]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
-<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_SetLatency
+<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_SetLatency
 <LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_PrefetchBufferCmd
 <LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_WaitForHSEStartUp
 <LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_SYSCLKConfig
@@ -620,7 +618,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_Configuration
 </UL>
 
-<P><STRONG><a name="[76]"></a>READ_MPU6050</STRONG> (Thumb, 318 bytes, Stack size 32 bytes, bsp_mpu6050.o(i.READ_MPU6050))
+<P><STRONG><a name="[76]"></a>READ_MPU6050</STRONG> (Thumb, 540 bytes, Stack size 32 bytes, bsp_mpu6050.o(i.READ_MPU6050))
 <BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = READ_MPU6050 &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
 </UL>
 <BR>[Calls]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2d
@@ -817,7 +815,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
 </UL>
-<P><STRONG><a name="[8d]"></a>test</STRONG> (Thumb, 98 bytes, Stack size 8 bytes, bsp_mpu6050.o(i.test))
+<P><STRONG><a name="[8d]"></a>test</STRONG> (Thumb, 188 bytes, Stack size 8 bytes, bsp_mpu6050.o(i.test))
 <BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = test &rArr; READ_MPU6050 &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
 </UL>
 <BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delayms

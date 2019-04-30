@@ -12,3 +12,6 @@
 .\objects\bsp.o: .\FWlib\inc\stm32f10x_usart.h
 .\objects\bsp.o: .\FWlib\inc\misc.h
 .\objects\bsp.o: F:\keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\bsp.o: .\BSP\inc\bsp_sys.h
+.\objects\bsp.o: .\BSP\inc\bsp_systick.h
+.\objects\bsp.o: .\BSP\inc\bsp_led.h
